@@ -1,0 +1,1010 @@
+
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TTLakes-Regular.woff') format('woff'),
+        url('TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html,    
+body {
+    font-family: TT Lakes, sans-serif ;
+    margin: 0;
+
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 28px ;
+    line-height: 40px ;
+    letter-spacing: -0.6px ;
+    color: #1b1c21 ;
+
+}
+
+nav button {
+    font-weight: 500 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    letter-spacing: -0.2px ;
+    color: #7e7e82;  
+}
+
+p {
+    font-weight: 400 ;
+    font-size: 14px ;
+    line-height: 20px ;
+    letter-spacing: 0.2px ;
+    color: #1b1c21 ;  
+}
+
+a {
+    font-weight: 500 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    letter-spacing: -0.2px ;
+    color: #1b1c21 ; 
+    text-decoration: none;
+}
+
+/*  */
+
+
+
+
+@media ( width <= 500px ) {
+
+div {
+    display: flex;
+    flex-wrap: ;   
+}
+
+.header_menu {
+    border-bottom: 1px solid #d9fff5;
+}
+
+.header_menu_item_1,
+.header_menu_item_2,
+.header_menu_item_3,
+.header_menu_item_4,
+.header_menu_item_5,
+.header_menu_item_6,
+.header_menu_item_7,
+.header_menu_item_8 {
+    margin-top: 24px;
+    margin-left: 16px;
+
+}
+
+.header_menu_item_2,
+.header_menu_item_3,
+.header_menu_item_4,
+.header_menu_item_5 {
+    display: none;
+}
+
+.header_menu_img {
+    margin-top: 18.59px;
+    margin-left: 16.45px;
+    margin-bottom: 12.60px;
+    
+}
+
+.invisible {
+    display: none;
+}
+
+.title {
+    padding-top: 24px;
+}
+
+.title_img {
+    margin-top: 0px;
+}
+
+h1 {
+    width: 288px;
+    height: 40px;
+    margin-top: 0px;
+    margin-left: 16px;
+    margin-bottom: 24px;
+}
+
+main {
+   background-color: #f8f8f8;
+}
+
+nav {
+    overflow: auto ;
+}
+
+.main_menu {
+    width: 504px;
+    height: 40px ;
+    margin-top: px;
+    margin-left: 16px;
+    margin-bottom: 14px;                    
+}
+
+.main_menu_item_3,
+.main_menu_item_4,
+.main_menu_item_5,
+.main_menu_item_6,
+.main_menu_item_ {
+    display: none;
+}
+
+.main_menu_item_1 {
+    width: 246px ;
+    height: 40px ;
+    margin-top: px;
+    margin-left: 0px;
+}
+
+.main_menu_item_2 {
+    width: 258px ;
+    height: 40px ;
+    margin-top: px;
+    margin-left: 0px;
+}
+
+button{
+    background-color: #f8f8f8;
+    border-color: #f8f8f8;
+    border-width: 0px;
+    padding-left: 14.54px;
+    padding-right: 16.00px ;
+
+}
+
+button:hover {
+    background-color: white;
+    border-color: #b8ffec  ;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid; 
+}
+
+
+.conteiner {
+    display:  block ;
+}
+
+p {
+    line-height: 18px ;    
+}
+
+.description {
+    display: inline;
+    background-color: #f8f8f8;
+    margin-bottom: 16px;   
+}
+
+.description_text_2 {
+    display: none  ;
+    width: 288px ;
+    height: 150px ;
+    margin-top: px;
+    margin-left: 16px;
+
+}
+
+.description_text_1 {
+    width: 288px ;
+    height: 90px ;
+    margin-top: px;
+    margin-left: 16px;
+    
+}
+
+.link {
+    width: 132px;
+    height: 24px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+
+}
+
+.link_arrow {
+    width: px;
+    height: px;
+    align-self: center ;
+    padding-left: 8.29px;
+    padding-right: 8.30px;
+}
+
+.link_link {
+    width: 100px;
+    height: 24px;
+    margin-left: 8px;
+    
+}
+
+.image {
+    width: 320px;
+    height: 176px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media ( 500px <= width <= 1000px ) {
+
+
+
+
+div {
+    display: flex;
+
+}
+
+.header_menu {
+    border-bottom: 1px solid #d9fff5;
+}
+
+.header_menu_item_1 {
+    margin-top: 24px;
+    margin-left: 24px;
+
+}
+
+.header_menu_item_2 {
+    margin-top: 28px;
+    margin-left: 20px;
+}
+
+.header_menu_item_3 {
+    margin-top: 24px;
+    margin-left: 251px;
+}
+
+.header_menu_item_6 {
+    margin-top: 28px;
+    margin-left: 20px;
+}
+
+.header_menu_item_7 {
+    margin-top: 24px;
+    margin-left: 20px;
+}
+
+.header_menu_item_4,
+.header_menu_item_5,
+.header_menu_item_8 {
+    margin-top: 24px;
+    margin-left: 16px;
+
+}
+
+.header_menu_img {
+    margin-top: 18.59px;
+    margin-left: 20.45px;
+    margin-bottom: 12.60px;
+    
+}
+
+.title {
+    padding-top: 24px;
+}
+
+.title_img {
+    margin-top: 0px;
+}
+
+h1 {
+    width: 288px;
+    height: 40px;
+    margin-top: 0px;
+    margin-left: 16px;
+    margin-bottom: 32px;
+}
+
+main {
+   background-color: #f8f8f8;
+}
+
+nav {
+    overflow: auto ;
+}
+
+.main_menu {
+    width: 1200px;
+    height: 40px ;
+    margin-top: px;
+    margin-left: 24px;
+    margin-bottom: 18px;                 /* вернусь поменять нижний отступ */
+}
+
+.main_menu_item_5,
+.main_menu_item_6,
+.main_menu_item_ {
+    display: ;                           /*  */
+}
+
+.main_menu_item_1 {
+    width: px ;
+    height: 40px ;
+    margin-top: px;
+    margin-left: 0px;
+}
+
+.main_menu_item_2 {
+    width: px ;
+    height: 40px ;
+    margin-top: px;
+    margin-left: 0px;
+}
+
+button{
+    background-color: #f8f8f8;
+    border-color: #f8f8f8;
+    border-width: 0px;
+    padding-left: 14.54px;
+    padding-right: 16.00px ;
+
+}
+
+button:hover {
+    background-color: white;
+    border-color: #b8ffec  ;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid; 
+}
+
+
+.conteiner {
+    display:   ;                   /* block */
+}
+
+.description {
+    display: inline;
+    background-color: #f8f8f8;
+    margin-bottom: 24px; 
+}
+
+.description_text_1 {
+    width: 312px ;
+    height: px ;
+    margin-top: px;
+    margin-left: 24px;
+    
+}
+
+.description_text_2 {
+    width: 312px ;
+    height: px ;
+    margin-top: px;
+    margin-left: 24px;
+    margin-bottom: 10px;
+
+}
+
+.invisible {
+    display: none;
+}
+
+.link {
+    width: 132px;
+    height: 24px;
+    margin-left: 25px;
+    margin-bottom: 16px;
+
+}
+
+.link_arrow {
+    width: px;
+    height: px;
+    align-self: center ;
+    padding-left: 8.29px;
+    padding-right: 8.30px;
+}
+
+.link_link {
+    width: 100px;
+    height: 24px;
+    margin-left: 8px;
+    
+}
+
+.image {
+    width: 360px;
+    height: 208px;
+    margin-top: 12px;
+    margin-left: 48px;
+    
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media ( width > 1000px ) {
+
+
+
+
+div {
+    display: flex;
+
+}
+
+.header_menu {
+    background-color: #f8f8f8;
+}
+
+.header_menu_item_7 {
+    width: px ;                              /* 173px */
+    height: px;                              /* 50px */
+    margin-top: 42px;
+    margin-left: 405px;
+    text-align:  ;
+    vertical-align: ;
+    align-items: center ;
+    align-self: ;
+    padding-right: 8px;
+    padding-left: 8px;
+
+}
+
+
+
+span {
+    vertical-align: top ;
+    padding-bottom: px;
+}
+
+.green {
+    width: ;
+    height: px ;
+    margin-top: px;
+    text-align:  ;
+    vertical-align:  ;
+    align-items: ;
+    align-self: ;
+    
+}
+
+.header_menu_item_8 {
+    width: px;
+    height: 40px;
+    margin-top: 42px;
+    margin-left: 32px;
+}
+
+.header_menu_img {
+    margin-top: 18.59px;
+    margin-left: 20.45px;
+    margin-bottom: 12.60px;   
+}
+
+.header_menu_item_1,
+.header_menu_item_2,
+.header_menu_item_3,
+.header_menu_item_4,
+.header_menu_item_5,
+.header_menu_item_6,
+.header_menu_img {
+    display: none;
+}
+
+.invisible3 {
+    display: none;
+}
+
+.title {
+    padding-top: 0px;
+    margin-top: 42px;
+}
+
+.title_img {
+    margin-top: 0px;
+}
+
+h1 {
+    width: 266px;
+    height: 40px;
+    margin-top: 0px;
+    margin-left: 33px;
+    margin-bottom: 8px;
+}
+
+main {
+   background-color: #f8f8f8;
+}
+
+nav {
+    overflow:  ;
+}
+
+.main_menu {
+    width: px;
+    height: 82px ;
+    margin-top: px;
+    margin-left: 33px;
+    margin-bottom: 0px; 
+    flex-wrap: wrap;                                                
+}
+
+.main_menu_item_1,
+.main_menu_item_2,
+.main_menu_item_3,
+.main_menu_item_4
+.main_menu_item_5,
+.main_menu_item_6 {
+    height: 40px ;
+}
+
+button{
+    background-color: #f8f8f8;
+    border-color: #f8f8f8;
+    border-width: 0px;
+    padding-left: 14.54px;
+    padding-right: 16.00px ;
+
+}
+
+button:hover {
+    background-color: white;
+    border-color: #b8ffec  ;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid; 
+}
+
+
+.conteiner {
+    display:   ;                   /* block */
+}
+
+.description {
+    display: inline;
+    background-color: #f8f8f8;
+    margin-bottom: 24px;                  
+}
+
+.description_text_1 {
+    width: 490px ;
+    height: px ;
+    margin-top: 16px;
+    margin-left: 35px;
+    margin-bottom: px;
+    
+}
+
+.description_text_2 {
+    width: 490px ;
+    height: px ;
+    margin-top: 22px;
+    margin-left: 35px;
+    margin-bottom: 14px;
+
+}
+
+.invisible {
+    display: ;
+}
+
+.link {
+    width: 132px;
+    height: 24px;
+    margin-left: 33px;
+}
+
+.link_arrow {
+    width: px;
+    height: px;
+    align-self: center ;
+    padding-left: 8.29px;
+    padding-right: 8.30px;
+}
+
+.link_link {
+    width: 100px;
+    height: 24px;
+    margin-left: 8px;
+    
+}
+
+.image {
+    width: 531.35px;
+    height: 307px;
+    margin-top: 7px;          
+    margin-left: 36px;         
+    margin-bottom: 49px;
+}
+
+}
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+background-color: #f8f8f8;
+
+margin-bottom: 18.60px;
+
+
+padding-left: 14.54px;
+padding-right: 16.00px ;
+
+
+overflow: hidden;
+
+nav {
+    overflow: auto;
+}
+
+
+
+
+
+
+@media ( width <= 768px ) {}
+
+
+
+
+
+
+@media ( width <= 1200px ) {}
+
+разметка под большой рамер экрана:
+
+div {
+    display: flex;
+       
+}
+
+header {
+    
+}
+
+.header_menu {
+    
+}
+
+.header_menu_item {
+    margin-top: 24px;
+    margin-left: 16px;
+    
+}
+
+.header_menu_img {
+    margin-top: 18.59px;
+    margin-left: 20.45px;
+    margin-bottom: 18.60px;
+    
+}
+
+.title {
+    padding-top: 24px;
+}
+
+.title_img {
+    margin-top: 0px;
+}
+
+h1 {
+    width: 288px;
+    height: 40px;
+    margin-top: 0px;
+    margin-left: 16px;
+    margin-bottom: 24px;
+}
+
+main {
+   background-color: #f8f8f8;
+}
+
+.main_menu {
+    width: px;
+    height: 40px ;
+    margin-top: px;
+    margin-left: px;
+    margin-bottom: 24px;
+    overflow-y: ;
+}
+
+.main_menu_item_3,
+.main_menu_item_4,
+.main_menu_item_5,
+.main_menu_item_6,
+.main_menu_item_ {
+    display: none;
+}
+
+.main_menu_item_1 {
+    width: 246px ;
+    height: 40px ;
+    margin-top: px;
+    margin-left: 16px;
+}
+
+.main_menu_item_2 {
+    width: 258px ;
+    height: 40px ;
+    margin-top: px;
+    margin-left: 0px;
+}
+
+button {
+    background-color: white;
+    border-color: #b8ffec  ;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid;
+    
+}
+
+.conteiner {
+    display:  block ;
+
+}
+
+.description {
+    display: inline;
+    background-color: #f8f8f8;
+    margin-bottom: 16px;
+}
+
+.description_text_2 {
+    display:  none ;
+}
+
+.description_text_1 {
+    width: 288px ;
+    height: 90px ;
+    margin-top: px;
+    margin-left: 16px;
+    
+}
+
+.link {
+    margin-bottom: 16px;
+}
+
+.link_arrow {
+    width: px;
+    height: px;
+    margin-left: 16px;
+    align-self: center ;
+}
+
+.link_arrow_img {
+    
+}
+
+.link_link {
+    width: 100px;
+    height: 24px;
+    margin-left: 8px;
+    
+}
+
+.image {
+    width: 320px;
+    height: 176px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: TT Lakes, sans-serif ;
+    src: url('TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TTLakes-Regular.woff') format('woff'),
+        url('TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+второй вариант со шрифтами : не получился
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TTLakes-Regular.woff') format('woff'),
+        url('TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('TTLakesCondensed-Bold.eot');
+    src: local('TT Lakes Condensed Bold'), local('TTLakesCondensed-Bold'),
+        url('TTLakesCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TTLakesCondensed-Bold.woff') format('woff'),
+        url('TTLakesCondensed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('TTLakesCondensed-Medium.eot');
+    src: local('TT Lakes Condensed Medium'), local('TTLakesCondensed-Medium'),
+        url('TTLakesCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+        url('TTLakesCondensed-Medium.woff') format('woff'),
+        url('TTLakesCondensed-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('TTLakesCompressed-Regular.eot');
+    src: local('TT Lakes Compressed Regular'), local('TTLakesCompressed-Regular'),
+        url('TTLakesCompressed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TTLakesCompressed-Regular.woff') format('woff'),
+        url('TTLakesCompressed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html,    
+body {
+    font-family: TT Lakes, sans-serif ;
+    
+}
+
+h1 {
+    font-family:  TT Lakes Condensed Bold , sans-serif ;
+    font-weight: 700;
+    font-size: 28px ;
+    line-height: 40px ;
+    letter-spacing: -0.6px ;
+    color: #1b1c21 ;
+
+}
+
+nav a {
+    font-family: TT Lakes Condensed Medium, sans-serif ;
+    font-weight: 500 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    letter-spacing: -0.2px px ;
+    color: #7e7e82;  
+}
+
+p {
+    font-family: TT Lakes Compressed, sans-serif ;
+    font-weight: 400 ;
+    font-size: 14px ;
+    line-height: 18px ;
+    letter-spacing: 0.2px ;
+    color: #1b1c21 ;
+
+
+
+
+    <button class="arrow arrow-back" type="button"><span class="visually-hidden">Назад</span></button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
