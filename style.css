@@ -10,7 +10,7 @@
     font-weight: normal;
     font-style: normal;
 }
-
+  
 html {
   box-sizing: border-box;
 }
@@ -48,6 +48,7 @@ p {
     line-height: 20px ;
     letter-spacing: 0.2px ;
     color: #1b1c21 ;  
+    text-align: justify;
 }
 
 a {
@@ -63,7 +64,6 @@ a {
 
 
 
-
 @media ( width <= 500px ) {
 
 div {
@@ -72,6 +72,8 @@ div {
 
 .header-menu__wrap {
     border-bottom: 1px solid #d9fff5;
+    padding-right: 16px;
+    margin-right: 16px;
 }
 
 .header-menu__item:nth-child(2),
@@ -83,8 +85,16 @@ div {
 .header-menu__item:nth-child(9),
 .header-menu__item:nth-child(10) {
     margin-top: 24px;
-    margin-left: 16px;
+    margin-left: 10px;
+}
 
+.header-menu__item:nth-child(2) {
+    width: 100% ;
+}
+
+.header-menu__item:nth-child(10) {
+   padding-right: px;
+   
 }
 
 .header-menu__item:nth-child(3),
@@ -119,6 +129,7 @@ h1 {
 
 main {
    background-color: #f8f8f8;
+   min-height: 100%;
 }
 
 nav {
@@ -171,9 +182,11 @@ button:hover {
     border-style: solid; 
 }
 
-
 .section-about__container {
     display:  block ;
+    padding-right: 6px;
+    margin-top: 5vh;
+    height: 100vh ;
 }
 
 p {
@@ -184,21 +197,23 @@ p {
     display: inline;
     background-color: #f8f8f8;
     margin-bottom: 16px;   
+    height: ;
 }
 
 .section-about__text:nth-child(2) {
-    display: none  ;
-    width: 288px ;
-    height: 150px ;
+    display: none  ;                 
+    width: px ;                   /*    288px    */
+    height: px ;                  /*   150px     */
     margin-top: px;
     margin-left: 16px;
 }
 
 .section-about__text:nth-child(1) {
-    width: 288px ;
-    height: 90px ;
+    width: px ;                     /*  288px;  */
+    height: px ;                      /*  90px;  */ 
     margin-top: px;
     margin-left: 16px;
+    margin-right: 32px;               /*      */
 
 }
 
@@ -219,16 +234,30 @@ p {
 }
 
 .link__link {
-    width: 100px;
+    width: 130px;
     height: 24px;
     margin-left: 8px;
     
 }
 
 .image {
-    width: 320px;
-    height: 176px;
+    width: 100% ;                    /* 320px;  */
+    height: 100dvh ;                 /*  176px;  */
+    padding-right: 16px;
+    
+    
 }
+
+.image img {
+    width: 100% ;
+    height: 40dvh  ;
+    padding-left: 16px ;
+    padding-right: 16px;
+    padding-bottom: px;
+
+    
+}
+
 
 }
 
@@ -259,7 +288,6 @@ div {
 .header-menu__item:nth-child(2) {
     margin-top: 24px;
     margin-left: 24px;
-
 }
 
 .header-menu__item:nth-child(3) {
@@ -270,6 +298,7 @@ div {
 .header-menu__item:nth-child(5) {
     margin-top: 24px;
     margin-left: 251px;
+    
 }
 
 .header-menu__item:nth-child(8) {
@@ -287,14 +316,18 @@ div {
 .header-menu__item:nth-child(10) {
     margin-top: 24px;
     margin-left: 16px;
+    
+}
 
+.header-menu__item:nth-child(10) {
+    margin-right: 24px;
 }
 
 .header-menu__img {
     margin-top: 18.59px;
     margin-left: 20.45px;
     margin-bottom: 18.60px;
-    
+    width: 100%;
 }
 
 .main-menu__title {
@@ -307,6 +340,7 @@ h1 {
     margin-top: 0px;
     margin-left: 16px;
     margin-bottom: 32px;
+    padding-bottom: ;
 }
 
 main {
@@ -364,23 +398,28 @@ button:hover {
 
 .section-about__container {
     display:   ;                   /* block */
+    margin-top: 5vh;
+    height: 100vh;
+
 }
 
 .section-about__description{
     display: inline;
     background-color: #f8f8f8;
     margin-bottom: 24px; 
+    width: 50%;
+    height: 70vh;
 }
 
 .section-about__text:nth-child(1) {                       
-    width: 312px ;
+    width: px ;
     height: px ;
     margin-top: px;
     margin-left: 24px;
 }
 
 .section-about__text:nth-child(2) {                      
-    width: 312px ;
+    width: px ;
     height: px ;
     margin-top: px;
     margin-left: 24px;
@@ -415,13 +454,29 @@ button:hover {
 }
 
 .image {
-    width: 360px;
-    height: 208px;
+    width: 70%;                  /* 360px;  */
+    height: 60vh;                 /* 208px;  */
     margin-top: 12px;
     margin-left: 48px;
+    padding-right: 24px;
     
 }
 
+.image img {
+    width: 100%;
+    height: vh ; 
+
+}
+
+.section-about__wrap {
+    height: ;
+}
+
+body {
+    height: ;
+    margin: ;
+    padding: ;
+}
 
 }
 
@@ -454,6 +509,7 @@ div {
     margin-left: 415px;
     align-items: center ;
     margin-bottom: 8px;
+    width: 100% ;
   
 }
 
@@ -470,7 +526,8 @@ header span {
     margin-top: 42px;
     margin-left: 32px;
     margin-bottom: 8px;
-    
+    margin-right: 30px;
+    width: 100%  ;
 }
 
 .header-menu__img {
@@ -515,16 +572,17 @@ nav {
 }
 
 .main-menu__wrap {
-    width: px;
+    width: ;
     height: 82px ;
     margin-top: px;
     margin-left: 33px;
     margin-bottom: 0px; 
+    padding-top: 5vh;
     flex-wrap: wrap;                                                
 }
 
 .main-menu__item:nth-child(1),
-.main-menu__item:nth-child(2),           /* можно убрать по ходу ниче не поменяется, даже лучше становится */
+.main-menu__item:nth-child(2),   /* */
 .main-menu__item:nth-child(3),
 .main-menu__item:nth-child(4),
 .main-menu__item:nth-child(5),
@@ -552,16 +610,24 @@ button:hover {
 
 .section-about__container {
     display:   ;                   /* block */
+    
+    margin-top: 5vh;
+    
 }
 
 .section-about__description{
     display: inline;
     background-color: #f8f8f8;
-    margin-bottom: 500px;                  
+    margin-bottom: 500px;  
+
+    margin-top: 5vh;
+    width: 50%;
+    height: 70vh;
+
 }
 
 .section-about__text:nth-child(1) {
-    width: 490px ;
+    width: px ;
     height: px ;
     margin-top: 16px;
     margin-left: 35px;
@@ -569,7 +635,7 @@ button:hover {
 }
 
 .section-about__text:nth-child(2) {
-    width: 490px ;
+    width: px ;
     height: px ;
     margin-top: 22px;
     margin-left: 35px;
@@ -602,12 +668,21 @@ button:hover {
 }
 
 .image {
-    width: 531.35px;
-    height: 307px;
+    width: 70%;;                  /* 531.35px;   */
+    height: 60vh;                    /* 307px;   */
     margin-top: 7px;          
     margin-left: 36px;         
     margin-bottom: 49px;
+    padding-right: 40px;
 }
+
+.image img {
+    width: 100%;
+    height: vh ; 
+
+}
+
+
 
 }
 
@@ -684,6 +759,20 @@ overflow: hidden;
 nav {
     overflow: auto;
 }
+
+
+
+
+p {
+    font-weight: 400 ;
+    font-size: 14px ;
+    line-height: 20px ;
+    letter-spacing: 0.2px ;
+    color: #1b1c21 ;  
+}
+
+
+
 
 
 
@@ -986,6 +1075,608 @@ p {
     align-items: ;
     align-self: ;
 }    
+
+
+
+
+
+
+
+
+
+
+
+вариант до адаптивной верски (30.10)
+
+@media ( width <= 500px ) {
+
+div {
+    display: flex;  
+}
+
+.header-menu__wrap {
+    border-bottom: 1px solid #d9fff5;
+}
+
+.header-menu__item:nth-child(2),
+.header-menu__item:nth-child(3),
+.header-menu__item:nth-child(5),
+.header-menu__item:nth-child(6),
+.header-menu__item:nth-child(7),
+.header-menu__item:nth-child(8),
+.header-menu__item:nth-child(9),
+.header-menu__item:nth-child(10) {
+    margin-top: 24px;
+    margin-left: 16px;
+
+}
+
+.header-menu__item:nth-child(3),
+.header-menu__item:nth-child(5),
+.header-menu__item:nth-child(6),
+.header-menu__item:nth-child(7) {
+    display: none;
+}
+
+.header-menu__img {
+    margin-top: 18.59px;
+    margin-left: 16.45px;
+    margin-bottom: 18.60px;
+    
+}
+
+.invisible {
+    display: none;
+}
+
+.main-menu__title {
+    padding-top: 24px;
+}
+
+h1 {
+    width: 288px;
+    height: 40px;
+    margin-top: 0px;
+    margin-left: 16px;
+    margin-bottom: 24px;
+}
+
+main {
+   background-color: #f8f8f8;
+}
+
+nav {
+    overflow: auto ;
+}
+
+.main-menu__wrap {
+    width: 504px;
+    height: 40px ;
+    margin-top: px;
+    margin-left: 16px;
+    margin-bottom: 14px;                    
+}
+
+.main-menu__item:nth-child(3),
+.main-menu__item:nth-child(4),
+.main-menu__item:nth-child(5),
+.main-menu__item:nth-child(6) {
+    display: none;
+}
+
+.main-menu__item:nth-child(1) {
+    width: 246px ;
+    height: 40px ;
+    margin-top: px;
+    margin-left: 0px;
+}
+
+.main-menu__item:nth-child(2) {
+    width: 258px ;
+    height: 40px ;
+    margin-top: px;
+    margin-left: 0px;
+}
+
+button{
+    background-color: #f8f8f8;
+    border-color: #f8f8f8;
+    border-width: 0px;
+    padding-left: 14.54px;
+    padding-right: 16.00px ;
+
+}
+
+button:hover {
+    background-color: white;
+    border-color: #b8ffec  ;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid; 
+}
+
+
+.section-about__container {
+    display:  block ;
+}
+
+p {
+    line-height: 18px ;    
+}
+
+.section-about__description {
+    display: inline;
+    background-color: #f8f8f8;
+    margin-bottom: 16px;   
+}
+
+.section-about__text:nth-child(2) {
+    display: none  ;
+    width: 288px ;
+    height: 150px ;
+    margin-top: px;
+    margin-left: 16px;
+}
+
+.section-about__text:nth-child(1) {
+    width: 288px ;
+    height: 90px ;
+    margin-top: px;
+    margin-left: 16px;
+
+}
+
+.link{
+    width: 132px;
+    height: 24px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+
+}
+
+.link__arrow {
+    width: px;
+    height: px;
+    align-self: center ;
+    padding-left: 8.29px;
+    padding-right: 8.30px;
+}
+
+.link__link {
+    width: 100px;
+    height: 24px;
+    margin-left: 8px;
+    
+}
+
+.image {
+    width: 320px;
+    height: 176px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media ( 500px <= width <= 1000px ) {
+
+
+
+
+div {
+    display: flex;
+
+}
+
+.header-menu__wrap {
+    border-bottom: 1px solid #d9fff5;
+}
+
+.header-menu__item:nth-child(2) {
+    margin-top: 24px;
+    margin-left: 24px;
+
+}
+
+.header-menu__item:nth-child(3) {
+    margin-top: 28px;
+    margin-left: 20px;
+}
+
+.header-menu__item:nth-child(5) {
+    margin-top: 24px;
+    margin-left: 251px;
+}
+
+.header-menu__item:nth-child(8) {
+    margin-top: 28px;
+    margin-left: 20px;
+}
+
+.header-menu__item:nth-child(9) {
+    margin-top: 24px;
+    margin-left: 20px;
+}
+
+.header-menu__item:nth-child(6),
+.header-menu__item:nth-child(7),
+.header-menu__item:nth-child(10) {
+    margin-top: 24px;
+    margin-left: 16px;
+
+}
+
+.header-menu__img {
+    margin-top: 18.59px;
+    margin-left: 20.45px;
+    margin-bottom: 18.60px;
+    
+}
+
+.main-menu__title {
+    padding-top: 24px;
+}
+
+h1 {
+    width: 288px;
+    height: 40px;
+    margin-top: 0px;
+    margin-left: 16px;
+    margin-bottom: 32px;
+}
+
+main {
+   background-color: #f8f8f8;
+}
+
+nav {
+    overflow: auto ;
+}
+
+.main-menu__wrap {
+    width: 1200px;
+    height: 40px ;
+    margin-top: px;
+    margin-left: 24px;
+    margin-bottom: 18px;                 /* вернусь поменять нижний отступ *//*
+}
+
+.main-menu__item:nth-child(5),
+.main-menu__item:nth-child(6) {
+    display: ;                           
+}
+
+.main-menu__item:nth-child(1) {
+    width: px ;
+    height: 40px ;
+    margin-top: px;
+    margin-left: 0px;
+}
+
+.main-menu__item:nth-child(2) {
+    width: px ;
+    height: 40px ;
+    margin-top: px;
+    margin-left: 0px;
+}
+
+button{
+    background-color: #f8f8f8;
+    border-color: #f8f8f8;
+    border-width: 0px;
+    padding-left: 14.54px;
+    padding-right: 16.00px ;
+
+}
+
+button:hover {
+    background-color: white;
+    border-color: #b8ffec  ;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid; 
+}
+
+
+.section-about__container {
+    display:   ;                   /* block *//*
+}
+ 
+.section-about__description{
+    display: inline;
+    background-color: #f8f8f8;
+    margin-bottom: 24px; 
+}
+
+.section-about__text:nth-child(1) {                       
+    width: 312px ;
+    height: px ;
+    margin-top: px;
+    margin-left: 24px;
+}
+
+.section-about__text:nth-child(2) {                      
+    width: 312px ;
+    height: px ;
+    margin-top: px;
+    margin-left: 24px;
+    margin-bottom: 10px;
+}
+
+.invisible {
+    display: none;
+}
+
+.link {
+    width: 132px;
+    height: 24px;
+    margin-left: 25px;
+    margin-bottom: 16px;
+
+}
+
+.link__arrow {
+    width: px;
+    height: px;
+    align-self: center ;
+    padding-left: 8.29px;
+    padding-right: 8.30px;
+}
+
+.link__link {
+    width: 100px;
+    height: 24px;
+    margin-left: 8px;
+    
+}
+
+.image {
+    width: 360px;
+    height: 208px;
+    margin-top: 12px;
+    margin-left: 48px;
+    
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media ( width > 1000px ) {
+
+
+
+
+div {
+    display: flex;
+}
+
+.header-menu__wrap {
+    background-color: #f8f8f8;
+}
+
+.header-menu__item:nth-child(9) {
+    width: px ;                            
+    height: px;                              
+    margin-top: 42px;
+    margin-left: 415px;
+    align-items: center ;
+    margin-bottom: 8px;
+  
+}
+
+header span {
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+
+
+.header-menu__item:nth-child(10) {
+    width: px;
+    height: px;
+    align-items: center ;
+    margin-top: 42px;
+    margin-left: 32px;
+    margin-bottom: 8px;
+    
+}
+
+.header-menu__img {
+    margin-top: 18.59px;
+    margin-left: 20.45px;
+    margin-bottom: 18.60px;   
+}
+
+.header-menu__item:nth-child(2),
+.header-menu__item:nth-child(3),
+.header-menu__item:nth-child(5),
+.header-menu__item:nth-child(6),
+.header-menu__item:nth-child(7),
+.header-menu__item:nth-child(8),
+.header-menu__img {
+    display: none;
+}
+
+.invisible3 {
+    display: none;
+}
+
+.header-menu__title {
+    padding-top: 0px;
+    margin-top: 42px;
+}
+
+h1 {
+    width: 266px;
+    height: 40px;
+    margin-top: 0px;
+    margin-left: 33px;
+    margin-bottom: 8px;
+}
+
+main {
+   background-color: #f8f8f8;
+}
+
+nav {
+    overflow:  ;
+}
+
+.main-menu__wrap {
+    width: px;
+    height: 82px ;
+    margin-top: px;
+    margin-left: 33px;
+    margin-bottom: 0px; 
+    flex-wrap: wrap;                                                
+}
+
+.main-menu__item:nth-child(1),
+.main-menu__item:nth-child(2),           /* можно убрать по ходу ниче не поменяется, даже лучше становится *//* 
+.main-menu__item:nth-child(3),
+.main-menu__item:nth-child(4),
+.main-menu__item:nth-child(5),
+.main-menu__item:nth-child(6) {
+    height: 40px ;
+}
+
+button{
+    background-color: #f8f8f8;
+    border-color: #f8f8f8;
+    border-width: 0px;
+    padding-left: 14.54px;
+    padding-right: 16.00px ;
+
+}
+
+button:hover {
+    background-color: white;
+    border-color: #b8ffec  ;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid; 
+}
+
+
+.section-about__container {
+    display:   ;                   /* block *//* 
+}
+
+.section-about__description{
+    display: inline;
+    background-color: #f8f8f8;
+    margin-bottom: 500px;                  
+}
+
+.section-about__text:nth-child(1) {
+    width: 490px ;
+    height: px ;
+    margin-top: 16px;
+    margin-left: 35px;
+    margin-bottom: px;
+}
+
+.section-about__text:nth-child(2) {
+    width: 490px ;
+    height: px ;
+    margin-top: 22px;
+    margin-left: 35px;
+    margin-bottom: 14px;
+}
+
+.invisible {
+    display: ;
+}
+
+.link {
+    width: 132px;
+    height: 24px;
+    margin-left: 33px;
+}
+
+.link__arrow {
+    width: px;
+    height: px;
+    align-self: center ;
+    padding-left: 8.29px;
+    padding-right: 8.30px;
+}
+
+.link__link {
+    width: 100px;
+    height: 24px;
+    margin-left: 8px;
+    
+}
+
+.image {
+    width: 531.35px;
+    height: 307px;
+    margin-top: 7px;          
+    margin-left: 36px;         
+    margin-bottom: 49px;
+}
+
+}
+
+*/
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+для того чтобы hover не срабатывало при наведении на тач-устройствах, только от мыши
+
+@media (hover: hover) {
+button:hover {
+    background-color: white;
+    border-color: #b8ffec  ;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid; 
+}
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
