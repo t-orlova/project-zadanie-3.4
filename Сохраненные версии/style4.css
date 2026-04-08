@@ -34,15 +34,12 @@ h1 {
 
 }
 
-button {
+nav button {
     font-weight: 500 ;
     font-size: 16px ;
     line-height: 24px ;
-    letter-spacing: -0.2px ;     
-}
-
-.main-menu__navigation button {
-    color: #7e7e82; 
+    letter-spacing: -0.2px ;
+    color: #7e7e82;  
 }
 
 p {
@@ -63,177 +60,12 @@ a {
     text-decoration: none;
 }
 
-button {
-    padding: 0;
-    border: 0;
-    background-color: white;     
-    cursor: pointer;
-}
-
 /*  */
 
 body {
     min-height: 100vh;
-    overflow: ;                       /*  hidden  */
+    overflow: hidden;
 }
-
-.sidebar {
-    position: fixed;
-    top: 0 ;
-    left: 0 ;
-    width: 320px;
-    height: 100vh;
-    background-color:aliceblue;
-    display: flex; 
-    flex-direction: column;   
-}
-
-.sidebar {
-    box-shadow: 3px 0px 30px 0px #7e7e82;
-}
-
-.sidebar-header__wrap {
-    justify-content: space-evenly;
-    align-items: center;
-    height: 88px;
-    background-color:white;
-    border-bottom: 2px solid #d9fff5;
-}
-
-.sidebar-header__wrap .sidebar-header__item:nth-child(2) {    
-    width: 50%;
-}
-
-.sidebar-header__button {
-    border: 0;
-    background-color: white;    
-    padding: 0;
-    height: ;      /* 40px; фикс высота для того, чтоб не растягивались на всю высоту, чтоб уйти от stretch */    
-}
-
-.sidebar__list {
-    margin: 0;
-    padding: 25px 0px;
-
-    list-style: none;
-    background-color:aliceblue; 
-    border: ;             /* border: 1px solid #e5e5e5;  */
-}
-
-.sidebar__item {
-    margin-bottom: 1vh;                             /*  32px   22px  */
-}
-
-.sidebar__item a {
-    display: inline-block;
-    padding: 5px 5px 5px 25px;
-    color: #1b1c21;  
-}
-
-/*  1ый способ: через  opacity и относит/абсолютное позиционирование  */
-
-.sidebar__item {
-    position: relative;
-}
-
-.sidebar__item > img {
-    display: block;
-    position: absolute;
-    opacity: 0;    
-}
-
-.sidebar__item a:hover {
-    color:#7e7e82;
-}
-
-.sidebar__item:hover img {
-    opacity: 1;
-}
-
-
-/*  2ой способ: через  boreder-left и color  */
-
-.sidebar__item:last-child a:hover {
-    color:#7e7e82;
-    border-left: 4px solid #41f6d7;
-    border-radius: 3%;
-}
-
-
-
-
-.sidebar-footer {    
-    flex-direction: column;
-    justify-content: space-around;    
-    height: 200px ;
-    padding: 0 25px;
-    margin-top: auto;                           /*  220px  */
-    margin-bottom: 1vh;
-                                         /* border: 1px solid #e5e5e5;  */
-}
-
-.sidebar-lang {
-    margin-top: 10%;    
-}
-
-.sidebar-footer__item {
-    padding-right: 15px;
-}
-
-.sidebar-footer button {
-    background-color:aliceblue;
-}
-
-.sidebar-footer__tel a {
-    font-weight: 700 ;
-    font-size: 24px ;
-    line-height: 32px ;
-    letter-spacing: -0.6px ;
-    color: #1b1c21 ; 
-}
-
-.sidebar-lang__item {
-    padding-right: 10px;
-}
-
-.sidebar-lang button:active {
-    color:#7e7e82;    
-}
-
-
-
-
-.sidebar-header__button,
-.sidebar-footer__button {
-    transition: all 0.6s ease;
-}
-
-.sidebar-header__button:hover,
-.sidebar-footer__button:hover,
-.sidebar-footer__item:not(:last-child) button:hover {
-    opacity: 0.7;
-}
-
-.sidebar-footer__item:last-child button:hover {
-    filter: hue-rotate(300deg);
-    opacity: 1;    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media ( width <= 500px ) {
 
@@ -243,7 +75,7 @@ div {
 }
 
 .header-menu__wrap {
-    border-bottom: 2px solid #d9fff5;
+    border-bottom: 1px solid #d9fff5;
     padding-right: 16px;
     margin-right: 16px;
 }
@@ -337,7 +169,7 @@ nav {
     margin-left: 0px;
 }
 
-.main-menu__item button{
+button{
     background-color: #f8f8f8;
     border-color: #f8f8f8;
     border-width: 0px;
@@ -346,7 +178,7 @@ nav {
 
 }
 
-.main-menu__item button:hover {
+button:hover {
     background-color: white;
     border-color: #b8ffec  ;
     border-radius: 6px;
@@ -454,7 +286,7 @@ div {
 }
 
 .header-menu__wrap {
-    border-bottom: 2px solid #d9fff5;
+    border-bottom: 1px solid #d9fff5;
 }
 
 .header-menu__item:nth-child(2) {
@@ -550,7 +382,7 @@ nav {
     margin-left: 0px;
 }
 
-.main-menu__item button{
+button{
     background-color: #f8f8f8;
     border-color: #f8f8f8;
     border-width: 0px;
@@ -559,7 +391,7 @@ nav {
 
 }
 
-.main-menu__item button:hover {
+button:hover {
     background-color: white;
     border-color: #b8ffec  ;
     border-radius: 6px;
@@ -762,7 +594,7 @@ nav {
     height: 40px ;
 }
 
-.main-menu__item button{
+button{
     background-color: #f8f8f8;
     border-color: #f8f8f8;
     border-width: 0px;
@@ -771,7 +603,7 @@ nav {
 
 }
 
-.main-menu__item button:hover {
+button:hover {
     background-color: white;
     border-color: #b8ffec  ;
     border-radius: 6px;
