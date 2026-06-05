@@ -1,11 +1,41 @@
 
 let readmore = document.querySelector('.read-more');
-let span = document.querySelector('.read-more__span');
-let items = document.querySelectorAll('.brand-section__item');
+let spantwo = document.querySelector('.read-more__span');
+let texts = document.querySelectorAll('.section-about__text');
 
 
 
 
+readmore.onclick = function () {
+
+    for (let text of texts) {        
+        
+        if (text.classList.contains('openned')) {        
+            text.classList.remove('openned');
+            spantwo.textContent = 'Читать далее';
+
+            console.log(text);                
+
+        } else {
+            text.classList.add('openned');
+            spantwo.textContent = 'Скрыть';
+
+            console.log(text);        
+        }
+    }    
+}
+
+
+
+console.log();
+
+
+
+
+
+
+
+/*
 
 readmore.onclick = function () {
 
@@ -27,20 +57,7 @@ readmore.onclick = function () {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-console.log();
-
-
-
+*/
 
 
 

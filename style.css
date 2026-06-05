@@ -90,7 +90,7 @@ header {
 body {
     background-color: #f8f8f8;
     min-height: 100vh;
-    overflow: auto;                      /*  hidden  */
+    overflow: auto;                      /*  hidden , auto  */
 }
 
 
@@ -271,7 +271,7 @@ h2 {
     background-color: #f8f8f8;       /* #f8f8f8;  */      
 }
 
-.read-more {
+.look-more {
     display: flex;
     background-color: #f8f8f8;
     
@@ -280,7 +280,7 @@ h2 {
     padding: 10px 0px;
 }
 
-.read-more > img {        
+.look-more > img {        
     margin-right: 10px;    
 }
 
@@ -297,6 +297,30 @@ h2 {
 
 
 
+/* Читать далее */
+
+.read-more {
+    display: flex;
+    background-color: #f8f8f8;
+    
+    margin-left: 24px;
+    margin-bottom: 20px;   
+    padding: 10px 0px;
+}
+
+.read-more > img {        
+    margin-right: 10px;    
+}
+
+.section-about__text:nth-child(2) { 
+    display: none;
+}
+
+
+
+.section-about__description .openned {
+    display: inline-block ;
+}
 
 
 
@@ -311,11 +335,7 @@ h2 {
 
 
 
-
-
-
-@media ( width <= 500px ) {
-
+@media ( width < 500px ) {
 
 div {
     display: flex;  
@@ -435,12 +455,14 @@ nav {
 
 .section-about__wrap {
     height: 70vh ;
+    margin-bottom: 10vh;                     /*   */
 }
 
 .section-about__container {
     display:  block ;
     padding-right: 6px;
     margin-top: 5vh;
+    margin-bottom: 10px;
     height: 70vh;                                   /*  100vh  */
 }
 
@@ -455,12 +477,12 @@ p {
     height: ;
 }
 
-.section-about__text:nth-child(2) {
-    display: none  ;                 
+.section-about__text:nth-child(2) {                
     width: px ;                   /*    288px    */
     height: px ;                  /*   150px     */
     margin-top: px;
     margin-left: 16px;
+    margin-right: 32px;
 }
 
 .section-about__text:nth-child(1) {
@@ -522,7 +544,7 @@ p {
     display: none;
 }
 
-.read-more {
+.look-more {
     display: none;
 }
 
@@ -1029,7 +1051,7 @@ nav {
     padding: 24px 32px 10px 32px;
 }
 
-.read-more {    
+.look-more {    
     margin-left: 32px;
 }
 
@@ -1056,8 +1078,23 @@ nav {
 }
 
 
+/* Читать далее */
+
+.read-more {    
+    margin-left: 32px;
+}
+
+
+
+
+
+
+
+
+
 
 }
+
 
 
 
