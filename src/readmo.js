@@ -1,41 +1,10 @@
 
 let readmore = document.querySelector('.read-more');
-let spantwo = document.querySelector('.read-more__span');
-let texts = document.querySelectorAll('.section-about__text');
+let span = document.querySelector('.read-more__span');
+let items = document.querySelectorAll('.brand-section__item');
 
 
 
-
-readmore.onclick = function () {
-
-    for (let text of texts) {        
-        
-        if (text.classList.contains('openned')) {        
-            text.classList.remove('openned');
-            spantwo.textContent = 'Читать далее';
-
-            console.log(text);                
-
-        } else {
-            text.classList.add('openned');
-            spantwo.textContent = 'Скрыть';
-
-            console.log(text);        
-        }
-    }    
-}
-
-
-
-console.log();
-
-
-
-
-
-
-
-/*
 
 readmore.onclick = function () {
 
@@ -57,11 +26,8 @@ readmore.onclick = function () {
 }
 
 
-*/
 
-
-
-
+console.log();
 
 
 
@@ -112,5 +78,48 @@ readmore.onclick = function () {
     // console.log();
 }
 */
+
+
+
+
+/*  вариант сразу на 2 кнопки, но он не совсем правильно работает, сразу обе кнопки открываются
+
+let readmore = document.querySelector('.read-more');
+let readmores = document.querySelectorAll('.read-more');
+let spans = document.querySelectorAll('.read-more__span');
+let items = document.querySelectorAll('.brand-section__item');
+
+
+
+for (let readmore of readmores) {
+
+readmore.onclick = function () {
+
+    for (let item of items) {        
+        
+        if (item.classList.contains('openned')) {        
+            item.classList.remove('openned');
+
+            for (let span of spans) {
+            span.textContent = 'Показать все';
+            }
+
+            console.log();                
+
+        } else {
+            item.classList.add('openned');
+            
+            for (let span of spans) {
+            span.textContent = 'Скрыть';
+            }
+
+            console.log();        
+        }
+    }    
+}
+    
+}
+*/
+
 
 
