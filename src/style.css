@@ -39,7 +39,6 @@ html,
 body {
     font-family: 'TTLakes Medium', sans-serif ;
     margin: 0;
-
 }
 
 h1 {
@@ -285,6 +284,7 @@ nav {
 }
 
 
+/*  плавные переходы при наведении на кнопку  */
 
 .sidebar-header__button,
 .sidebar-footer__button {
@@ -342,7 +342,6 @@ nav {
     background-color: transparent;
     box-shadow: 3px 0px 30px 0px #7e7e82;
     z-index: 10;
-
 }
 
 .sidebar-header__wrap {
@@ -442,7 +441,7 @@ nav {
 }
 
 .sidebar-feedback__link {
-   font-weight: 500 ;
+    font-weight: 500 ;
     font-size: 14px ;
     line-height: 16px ;
     letter-spacing: 0px ;
@@ -506,7 +505,7 @@ nav {
 }
 
 
-/*  для работы sidebar-feedback в menu.js */
+/*  для работы sidebar-feedback в feedback.js */
 
 .sidebar-feedback {
     display: none;                /*  временно убрала  none / block  */
@@ -588,7 +587,7 @@ nav {
 }
 
 .sidebar-call__link {
-   font-weight: 500 ;
+    font-weight: 500 ;
     font-size: 14px ;
     line-height: 16px ;
     letter-spacing: 0px ;
@@ -655,7 +654,7 @@ nav {
 
 
 
-/*  для работы sidebar-call в menu.js */
+/*  для работы sidebar-call в call.js */
 
 .sidebar-call {
     display: none ;                /*  временно убрала  none / block  */
@@ -713,16 +712,33 @@ h2 {
     margin-right: 10px;    
 }
 
-.brand-section__item:nth-child(9),
-.brand-section__item:nth-child(10),
-.brand-section__item:nth-child(11),
-.brand-section__item:nth-child(12) {
+#brand:nth-child(9),
+#brand:nth-child(10),
+#brand:nth-child(11),
+#brand:nth-child(12) {
     display: none ;                    /* inline-block, none */
 }
 
-.brand-section__wrap .openned {
+#brandList .openned {
     display: inline-block;
 }
+
+
+
+
+/* Ремонт различных видов техники */
+
+.technic-section__wrap {
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    border: 0px solid rgb(218, 215, 215); 
+    padding: 24px 24px 10px 24px;
+}
+
+.technic-section__wrap > button {    
+    background-color: #f8f8f8;   
+}
+
 
 
 
@@ -767,6 +783,7 @@ tr {
     display: grid;
     grid-template-columns: 1fr 100px 100px 125px;
     column-gap: 24px;
+    column-gap: 7vw;   /* 110px, 7vw */
     align-items: center;
     background-color: #ffffff;
     padding: 16px;    
@@ -916,11 +933,8 @@ h1 {
 }
 
 .main-menu__navigation {
-    padding-top: 88px;
+    padding-top: 88px;   
 }
-
-
-
 
 div {
     display: flex;  
@@ -947,11 +961,6 @@ div {
 
 .header-menu__item:nth-child(1) {
     width: 100% ;
-}
-
-.header-menu__item:nth-child(9) {
-   padding-right: px;
-   
 }
 
 .header-menu__item:nth-child(2),
@@ -989,7 +998,7 @@ nav {
     margin-bottom: 14px;                    
 }
 
-.main-menu__item:nth-child(3),
+.main-menu__item:nth-child(3),     /*  !!!  */
 .main-menu__item:nth-child(4),
 .main-menu__item:nth-child(5),
 .main-menu__item:nth-child(6) {
@@ -999,18 +1008,16 @@ nav {
 .main-menu__item:nth-child(1) {
     width: 266px ;
     height: 40px ;
-    margin-top: px;
     margin-left: 0px;
 }
 
 .main-menu__item:nth-child(2) {
     width: 258px ;
     height: 40px ;
-    margin-top: px;
     margin-left: 0px;
 }
 
-.main-menu__item button{
+.main-menu__item button {
     background-color: #f8f8f8;
     border-color: #f8f8f8;
     border-width: 0px;
@@ -1046,9 +1053,8 @@ p {
 
 .section-about__description {
     display: inline;
-    background-color: #f8f8f8;
+    background-color: #f8f8f8;   /*  !!!!  */
     margin-bottom: 16px;   
-    height: ;
 }
 
 .section-about__text:nth-child(2) {    
@@ -1082,6 +1088,14 @@ p {
 }
 
 .read-more {
+    display: none;
+}
+
+
+
+/* Ремонт различных видов техники */
+
+.technic-section__wrap {
     display: none;
 }
 
@@ -1350,7 +1364,7 @@ div {
 }
 
 .header-menu__wrap {
-    border-bottom: 2px solid #d9fff5;    
+    border-bottom: 2px solid #d9fff5;    /* !!!! */
     align-items: flex-start;
 }
 
@@ -1405,7 +1419,6 @@ h1 {
     margin-top: 0px;
     margin-left: 24px;
     margin-bottom: 32px;
-    padding-bottom: ;
 }
 
 main {
@@ -1419,14 +1432,8 @@ nav {
 .main-menu__wrap {
     width: 1200px;
     height: 40px ;
-    margin-top: px;
     margin-left: 24px;
-    margin-bottom: 18px;             /* вернусь поменять нижний отступ */
-}
-
-.main-menu__item:nth-child(5),
-.main-menu__item:nth-child(6) {
-    display: ;                           /*  */
+    margin-bottom: 18px;          
 }
 
 .main-menu__item:nth-child(1) {
@@ -1468,7 +1475,8 @@ nav {
 
 .section-about__container {
     display:   ;                   /* block */
-    margin-top: 5vh;
+    margin-top: 5vh;               /*   !!!!!  */
+    padding-right: 6px;
     height: ;          /* 100vh */  
 
 }
@@ -1500,8 +1508,7 @@ nav {
     margin-top: 12px;
     margin-left: 48px;
     padding-right: 24px;
-    margin-bottom: 24px; 
-    
+    margin-bottom: 24px;    
 }
 
 .image img {
@@ -1513,16 +1520,16 @@ nav {
 
 /* Ремонт техники различных брендов */
 
-.brand-section__item:nth-child(7),
-.brand-section__item:nth-child(8),
-.brand-section__item:nth-child(9),
-.brand-section__item:nth-child(10),
-.brand-section__item:nth-child(11),
-.brand-section__item:nth-child(12) {
+#brand:nth-child(7),
+#brand:nth-child(8),
+#brand:nth-child(9),
+#brand:nth-child(10),
+#brand:nth-child(11),
+#brand:nth-child(12) {
     display: none ;                    /* inline-block, none */
 }
 
-.brand-section__wrap .openned {
+#brandList .openned {
     display: inline-block;
 }
 
@@ -1552,6 +1559,15 @@ nav {
 
 
 
+/* footer */
+
+.footer__wrap {
+    padding-right: 16px;
+    
+    justify-content: space-between;
+}
+
+
 
 /*  sidebar   */
 /*
@@ -1566,7 +1582,6 @@ nav {
     display: flex;               
 }
 */
-
 
 
 
@@ -1656,7 +1671,7 @@ main {
 }
 
 nav {
-    overflow:  ;
+    overflow:  ;                 /*  !!!!!!   */
 }
 
 .main-menu__wrap {
@@ -1702,7 +1717,8 @@ nav {
 }
 
 .section-about__container {    
-    margin-top: 5vh;    
+    margin-top: 5vh;
+    padding-right: 6px;    
 }
 
 .section-about__description{
@@ -1733,7 +1749,7 @@ nav {
 }
 
 .image {
-    width: 50%;;               /* 60% ,50%  */   
+    width: 50%;               /* 60% ,50%  */   
     height: ;                  /* 60vh   */
     margin-top: 7px;          
     margin-left: 36px;         
@@ -1761,17 +1777,26 @@ nav {
     margin-left: 32px;
 }
 
-.brand-section__item:nth-child(9),
-.brand-section__item:nth-child(10),
-.brand-section__item:nth-child(11),
-.brand-section__item:nth-child(12) {
+#brand:nth-child(9),
+#brand:nth-child(10),
+#brand:nth-child(11),
+#brand:nth-child(12) {
     display: none ;                    /* inline-block, none */
 }
 
-.brand-section__wrap .openned {
+#brandList .openned {
     display: inline-block;
 }
 
+
+
+/* Ремонт различных видов техники */
+
+.technic-section__wrap {
+    border: 0px solid rgb(218, 215, 215);
+    gap: 10px 32px;
+    padding: 24px 32px 10px 32px;
+}
 
 
 
@@ -1872,8 +1897,7 @@ sidebar белого цвета
 
 table {
     margin: 32px;
-    margin-top: 16px;
-      
+    margin-top: 16px;      
 }
 
 tr {
@@ -1887,7 +1911,6 @@ tr {
     border-image: linear-gradient( to right, transparent 2.5%, #eaeaea 2.5%, #eaeaea 97.5%, transparent 97.5% );
     border-image-slice: 1;
     border-image-repeat: stretch;
-
 }
 
 .prices-section__note {    
@@ -2012,20 +2035,6 @@ tr {
 .sidebar-call::before {
     width: 440px;     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

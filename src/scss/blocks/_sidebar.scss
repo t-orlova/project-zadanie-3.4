@@ -1,0 +1,698 @@
+
+/*  sidebar-menu */
+
+.sidebar {
+    position: fixed;
+    top: 0 ;
+    left: 0 ;
+    width: 320px;
+    height: 100vh;
+    background-color: $sidebar-color;
+    display: flex; 
+    flex-direction: column;
+
+    box-shadow: 3px 0px 30px 0px $gray-text-color;
+}
+
+.sidebar-header__wrap {
+    justify-content: space-evenly;
+    align-items: center;
+    height: 88px;
+    background-color: $white-color;
+    border-bottom: 2px solid $line-color;
+    
+    .sidebar-header__item {
+        &:nth-child(2) {    
+            width: 50%;
+        }
+
+        .sidebar-header__button {
+            border: 0;
+            background-color: $white-color;    
+            padding: 0;   
+        }
+    }
+}
+
+.sidebar__list {
+    margin: 0;
+    padding: 25px 0px;
+    list-style: none;
+    background-color: $sidebar-color;
+    
+    .sidebar__item {
+        margin-bottom: 1vh;      /*  32px   22px  */
+
+        a {
+            display: inline-block;
+            padding: 5px 5px 5px 25px;
+            color: $black-text-color;  
+        }
+        
+    }
+
+}
+
+/*  1ый способ: через  opacity и относит/абсолютное позиционирование  */
+
+.sidebar__item {
+    position: relative;
+    
+    img {
+        display: block;
+        position: absolute;
+        opacity: 0;    
+    }
+
+    a:hover {
+        color: $gray-text-color;
+    }
+
+    &:hover img {
+        opacity: 1;
+    }
+}
+
+/*  2ой способ: через  boreder-left и color  */
+
+.sidebar__item:last-child a:hover {
+    color:#7e7e82;
+    border-left: 4px solid $border-sidebar-color;
+    border-radius: 3%;
+}
+
+
+.sidebar-footer {    
+    flex-direction: column;
+    justify-content: space-around;    
+    height: 200px ;
+    padding: 0 25px;
+    margin-top: auto;               /*  220px  */
+    margin-bottom: 1vh;
+
+    .sidebar-footer__item {
+        padding-right: 15px;
+
+        .sidebar-footer__button {
+            background-color: $sidebar-color;
+        }
+    }
+
+    .sidebar-footer__tel a {
+        font-weight: 700 ;
+        font-size: 24px ;
+        line-height: 32px ;
+        letter-spacing: -0.6px ;
+        color: $black-text-color ; 
+    }
+
+    .sidebar-lang {
+        margin-top: 10%;
+        
+        .sidebar-lang__item {
+            padding-right: 10px;
+
+            .sidebar-lang__button {
+                background-color: $sidebar-color;
+            }
+
+            button:active {
+                color: $gray-text-color;    
+            }
+        }
+    }
+
+}
+
+
+/*  плавные переходы при наведении на кнопку  */
+
+.sidebar-header__button,
+.sidebar-footer__button {
+    transition: all 0.6s ease;
+}
+
+.sidebar-header__button:hover,
+.sidebar-footer__button:hover,
+.sidebar-footer__item:not(:last-child) button:hover {
+    opacity: 0.7;
+}
+
+.sidebar-footer__item:last-child button:hover {
+    filter: hue-rotate(300deg);
+    opacity: 1;    
+}
+
+
+
+/*  sidebar-blur  */  
+
+.sidebar {    
+    z-index: 8 ;
+}
+
+.sidebar-blur { 
+    position: absolute;   
+    width: 100vw;     
+    height: 100%;    
+    background-color: $white-color;
+    opacity: 86.05%;
+    top: 0px;
+    left: 320px;
+    z-index: 5;
+}
+
+.sidebar::before {
+    position: absolute;
+    content: "";
+    width: 320px;     
+    height: 100%;
+    top: 0px;
+    background-color: transparent;
+    box-shadow: 3px 0px 30px 0px $gray-text-color;
+    z-index: 10;
+
+}
+
+.sidebar-header__wrap {
+    position: relative; 
+    z-index: 15;
+}
+
+.sidebar__navigation {
+    position: relative; 
+    z-index: 15;
+}
+
+.sidebar-footer {
+    position: relative; 
+    z-index: 15;
+}
+
+
+
+/*  для работы sidebar в menu.js */
+
+.sidebar {
+    display: none;     /*  временно убрала   none / block или flex */
+}
+
+.main-menu .openned {
+    display: flex;               
+}
+
+
+
+/*  sidebar  3 часть */
+
+.sidebar {
+    @media screen and ( min-width: 1120px) {
+        display: block;
+        position: absolute;
+        left: -322px;
+        height: 100%;
+        box-shadow: -3px 0px 5px 0px $gray-text-color;
+        /*background-color: white;*/
+    }
+}
+
+body {
+    @media screen and ( min-width: 1120px) {
+        position: relative;
+        left: 321px;
+        width: 75%; 
+    }
+}
+
+.sidebar-header__wrap .sidebar-header__item:nth-child(1) {
+    @media screen and ( min-width: 1120px) {
+        display: none;
+    }
+}
+
+.sidebar-header__wrap .sidebar-header__item:nth-child(2) {
+    @media screen and ( min-width: 1120px) {
+        width: 60%;
+    }
+}
+
+.sidebar-footer {
+    @media screen and ( min-width: 1120px) {
+        margin-top: 420px;     /*  220px  */
+    }    
+}
+
+
+/*  для не работы sidebar в menu.js */
+
+.sidebar-blur {
+    @media screen and ( min-width: 1120px) {
+        display: none;
+    }
+}
+
+.sidebar::before {
+    @media screen and ( min-width: 1120px) {
+       display: none; 
+    }
+}
+
+
+
+
+
+/* sidebar-feedback */
+
+.sidebar-feedback {
+    position: fixed;
+    top: 0 ;
+    right: 0 ;
+    width: 340px;
+    height: 100vh;
+    background-color: $sidebar-color;
+    padding: 24px;
+
+    @media screen and ( max-width: 500px) {
+        width: 320px;
+        padding: 16px;
+    }
+
+    @media screen and ( min-width: 1120px) {
+        width: 440px;
+        padding: 32px;
+        padding-right: 32px;  /* 44px */
+    }
+
+    .button-close {
+        display: flex;
+        background-color: $sidebar-color;
+        margin-left: auto;
+        margin-bottom: 32px;
+        
+        @media screen and ( min-width: 1120px) {
+            position: absolute;
+            left: -73px;
+            background-color: transparent;
+        }
+    }
+
+    .sidebar-feedback__title {
+        position: relative;
+        left: -24px;
+        align-items: flex-end;
+        margin-bottom: 24px;
+
+        @media screen and ( max-width: 500px) {
+            left: -16px;
+        }
+
+        @media screen and ( min-width: 1120px) {
+            left: -32px;
+        }
+
+        h1 {
+            font-family: 'TTLakes Bold', sans-serif  ;
+            font-weight: 700;
+            font-size: 24px ;
+            line-height: 32px ;
+            letter-spacing: -0.6px ;
+            color: $black-text-color ;
+            
+            width: 288px;
+            height: 32px;
+            margin-left: 12px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            
+            @media screen and ( min-width: 1120px) {
+                margin-left: 28px;
+            }
+        }
+
+    }
+
+    .sidebar-feedback__form {
+        input {
+            width: 292px;
+            height: 48px;    
+            margin-bottom: 16px;
+            padding: 16px;
+
+            border: 1px solid $border-table-color ;    
+            border-radius: 8px;
+
+            @media screen and ( max-width: 500px) {
+                width: 288px;
+            }
+
+            @media screen and ( min-width: 1120px) {
+                width: 376px;  /* 364px */
+            }
+        }
+
+        textarea {
+            width: 292px;
+            height: 118px;
+            padding: 16px;
+
+            border: 1px solid $border-table-color ;
+            border-radius: 8px;
+
+            @media screen and ( max-width: 500px) {
+                width: 288px;
+            }
+
+            @media screen and ( min-width: 1120px) {
+                width: 376px;  /* 364px */
+            }
+        }
+
+        .sidebar-feedback__note {
+            font-weight: 500 ;
+            font-size: 14px ;
+            line-height: 16px ;
+            letter-spacing: 0px ;
+            color: $gray-text-color; 
+            text-align: left;
+            
+            .sidebar-feedback__link {
+                font-weight: 500 ;
+                font-size: 14px ;
+                line-height: 16px ;
+                letter-spacing: 0px ;
+                color: $pink-color; 
+            }
+        }
+
+        .button-submit {
+            display: flex;
+            background-color: $sidebar-color;    
+            margin-left: auto;
+            margin-top: 18px;
+        }
+    }
+}
+
+
+/* sidebar-feedback__blur */  
+
+.sidebar-feedback {    
+    z-index: 8 ;
+}
+
+.sidebar-feedback__blur { 
+    position: absolute;   
+    width: 100vw;     
+    height: 100%;    
+    background-color: $white-color;
+    opacity: 86.05%;
+    top: 0px;
+    right: 340px;
+    z-index: 5;
+
+    @media screen and ( max-width: 500px) {
+        right: 320px;
+    }
+
+    @media screen and ( min-width: 1120px) {
+        right: 440px; 
+    }
+}
+
+.sidebar-feedback::before {
+    position: absolute;
+    content: "";
+    width: 340px;     
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    background-color: transparent;
+    box-shadow: 3px 0px 30px 0px $gray-text-color;
+    z-index: 10;
+
+    @media screen and ( max-width: 500px) {
+        width: 320px;
+    }
+
+    @media screen and ( min-width: 1120px) {
+        width: 440px;
+    }
+}
+
+.button-close {
+    position: relative; 
+    z-index: 15;
+}
+
+.sidebar-feedback__title {
+    position: relative; 
+    z-index: 15;
+}
+
+.sidebar-feedback__form {
+    position: relative; 
+    z-index: 15;
+}
+
+.sidebar-feedback__note {
+    position: relative; 
+    z-index: 15;
+}
+
+.button-submit {
+    position: relative; 
+    z-index: 15;
+}
+
+
+/*  для работы sidebar-feedback в feedback.js */
+
+.sidebar-feedback {
+    display: none;                /*  none / block  */
+}
+
+.main-menu .openned {
+    display: block;               
+}
+
+
+
+
+
+/* sidebar-call */
+
+.sidebar-call {
+    position: fixed;
+    top: 0 ;
+    right: 0 ;
+    width: 340px;
+    height: 100vh;
+    background-color: $sidebar-color;
+    padding: 24px;
+
+    @media screen and ( max-width: 500px) {
+        width: 320px;
+        padding: 16px;
+    }
+
+    @media screen and ( min-width: 1120px) {
+        width: 440px;
+        padding: 32px;
+        padding-right: 32px;  /* 44px */
+    }
+
+    .button-close {
+        display: flex;
+        background-color: $sidebar-color;
+        margin-left: auto;
+        margin-bottom: 32px;
+
+        @media screen and ( min-width: 1120px) {
+            position: absolute;
+            left: -73px;
+            background-color: transparent; 
+        }    
+    }
+
+    .sidebar-call__title {
+        position: relative;
+        left: -24px;
+
+        align-items: flex-end;
+        margin-bottom: 24px;
+
+        @media screen and ( max-width: 500px) {
+            left: -16px;
+        }
+
+        @media screen and ( min-width: 1120px) {
+            left: -32px;
+        }
+
+        h1 {
+            font-family: 'TTLakes Bold', sans-serif  ;
+            font-weight: 700;
+            font-size: 24px ;
+            line-height: 32px ;
+            letter-spacing: -0.6px ;
+            color: $black-text-color ;
+            
+            width: 288px;
+            height: 32px;
+            margin-left: 12px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            
+            @media screen and ( min-width: 1120px) {
+                margin-left: 28px; 
+            }
+        }
+    }
+
+    .sidebar-call__form {
+        input {
+            width: 292px;
+            height: 48px;    
+            padding: 16px;
+
+            border: 1px solid $border-table-color;    
+            border-radius: 8px;
+
+            @media screen and ( max-width: 500px) {
+                width: 288px;
+            }
+
+            @media screen and ( min-width: 1120px) {
+                width: 376px;  /* 364px */
+            }
+        }
+
+        .sidebar-call__note {
+            font-weight: 500 ;
+            font-size: 14px ;
+            line-height: 16px ;
+            letter-spacing: 0px ;
+            color: $gray-text-color; 
+            text-align: left;
+            
+            .sidebar-call__link {
+                font-weight: 500 ;
+                font-size: 14px ;
+                line-height: 16px ;
+                letter-spacing: 0px ;
+                color: $pink-color; 
+            }
+        }
+        
+        .button-submit {
+            display: flex;
+            background-color: $sidebar-color;    
+            margin-left: auto;
+            margin-top: 18px;
+        }        
+    }
+}
+
+
+
+/* sidebar-call__blur */   
+
+.sidebar-call {    
+    z-index: 8 ;
+}
+
+.sidebar-call__blur { 
+    position: absolute;   
+    width: 100vw;     
+    height: 100%;    
+    background-color: $white-color;
+    opacity: 86.05%;
+    top: 0px;
+    right: 340px;
+    z-index: 5;
+
+    @media screen and ( max-width: 500px) {
+        right: 320px; 
+    }
+
+    @media screen and ( min-width: 1120px) {
+        right: 440px;
+    }
+}
+
+.sidebar-call::before {
+    position: absolute;
+    content: "";
+    width: 340px;     
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    background-color: transparent;
+    box-shadow: 3px 0px 30px 0px $gray-text-color;
+    z-index: 10;
+
+    @media screen and ( max-width: 500px) {
+        width: 320px;
+    }
+
+    @media screen and ( min-width: 1120px) {
+        width: 440px;
+    }
+}
+
+.button-close {
+    position: relative; 
+    z-index: 15;
+}
+
+.sidebar-call__title {
+    position: relative; 
+    z-index: 15;
+}
+
+.sidebar-call__form {
+    position: relative; 
+    z-index: 15;
+}
+
+.sidebar-call__note {
+    position: relative; 
+    z-index: 15;
+}
+
+.button-submit {
+    position: relative; 
+    z-index: 15;
+}
+
+
+
+
+/*  для работы sidebar-call в call.js */
+
+.sidebar-call {
+    display: none ;             /*  none / block  */
+}
+
+.main-menu .openned {
+    display: block;               
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and ( max-width: 500px) {}
+
+@media screen and ( min-width: 500px) and (max-width: 1120px) {}
+
+@media screen and ( min-width: 1120px) {}
+
+

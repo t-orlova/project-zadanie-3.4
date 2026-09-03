@@ -1,7 +1,7 @@
 
-let readmore = document.querySelector('.read-more');
-let span = document.querySelector('.read-more__span');
-let items = document.querySelectorAll('.brand-section__item');
+let readmore = document.querySelector('#readmore');
+let span = document.querySelector('#span');
+let items = document.querySelectorAll('#brand');
 
 
 
@@ -28,7 +28,6 @@ readmore.onclick = function () {
 
 
 console.log();
-
 
 
 

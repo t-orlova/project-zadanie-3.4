@@ -1,0 +1,648 @@
+
+.main-menu__navigation {      
+    padding-top: 88px;
+
+    @media screen and ( min-width: 500px) and (max-width: 1120px) {
+        padding-top: 96px;
+    }
+
+    @media screen and ( min-width: 1120px) {
+        padding-top: 0px;
+    }
+            
+    .main-menu__wrap {
+        height: 40px ;
+        margin-left: 16px;
+        margin-bottom: 14px;
+
+        @media screen and ( max-width: 500px) {
+            width: 1200px;
+        }
+
+        @media screen and ( min-width: 500px) and (max-width: 1120px) {
+            width: 1200px;
+            height: 40px ;
+            margin-left: 24px;
+            margin-bottom: 18px;
+        }
+
+        @media screen and ( min-width: 1120px) {            
+            height: 82px ;                
+            margin-left: 33px;
+            margin-bottom: 0px; 
+            padding-top: 5vh;
+            flex-wrap: wrap;
+        }
+
+        .main-menu__item {                
+
+            &:nth-child(1) {
+                height: 40px ;
+                margin-left: 0px;                    
+            }
+
+            &:nth-child(2) {
+                height: 40px ;
+                margin-left: 0px;                    
+            }
+
+            @media screen and ( min-width: 1120px) {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5),
+                &:nth-child(6) {
+                    height: 40px ;
+                }
+            }
+
+            & button {
+                background-color: $main-color;
+                border-color: $main-color;
+                border-width: 0px;
+                padding-left: 14.54px;
+                padding-right: 16.00px ;
+
+                &:hover {
+                    background-color: $white-color;
+                    border-color: $border-nav-color ;
+                    border-radius: 6px;
+                    border-width: 2px;
+                    border-style: solid; 
+                }
+            }
+        }
+    }
+
+}
+
+.section-about__wrap {
+    margin-bottom: 10vh;
+    
+    @media screen and ( min-width: 500px) and (max-width: 1120px) {
+        margin-bottom: 0vh;
+    }
+
+    @media screen and ( min-width: 1120px) {
+        margin-bottom: 0vh;
+    }
+
+    .section-about__container {
+            display:  block ;
+            padding-right: 6px;
+            margin-top: 5vh;
+            margin-bottom: 10px;
+
+            @media screen and ( min-width: 500px) and (max-width: 1120px) {
+                display: flex;
+                margin-bottom: 0px;                             
+            }
+
+            @media screen and ( min-width: 1120px) {
+                display: flex;
+                margin-bottom: 0px; 
+            }
+
+        .section-about__description {
+            display: inline;               
+
+            @media screen and ( max-width: 500px) {
+                margin-bottom: 16px;
+            }
+
+            @media screen and ( min-width: 500px) and (max-width: 1120px) {
+                display: inline;                    
+                margin-bottom: 24px; 
+                width: 50%;
+            }
+
+            @media screen and ( min-width: 1120px) {
+                display: inline;                    
+                margin-bottom: 50px;
+                margin-top: 5vh;
+                width: 50%;                    
+            }
+
+            .section-about__text {
+
+                @media screen and ( max-width: 500px) {
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                        margin-left: 16px;
+                        margin-right: 32px;                                                   
+                    }
+                }
+
+                @media screen and ( min-width: 500px) and (max-width: 1120px) {
+                    &:nth-child(1) {    
+                        margin-left: 24px;
+                    }
+
+                    &:nth-child(2) {                      
+                        margin-left: 24px;
+                        margin-bottom: 10px;
+
+                        .invisible {
+                            display: none;
+                        }                            
+                    }
+                }
+
+                @media screen and ( min-width: 1120px) {
+                    &:nth-child(1) {
+                        margin-top: 16px;
+                        margin-left: 35px;
+                    }
+
+                    &:nth-child(2) {
+                        margin-top: 22px;
+                        margin-left: 35px;
+                        margin-bottom: 14px;
+                    }                        
+                }
+            }
+        }
+
+        .image {
+            width: 100%;                   
+            padding-right: 16px;
+
+            @media screen and ( min-width: 500px) and (max-width: 1120px) {
+                width: 70%;                    
+                margin-top: 12px;
+                margin-left: 48px;
+                margin-bottom: 24px;
+                padding-right: 24px;
+            }
+
+            @media screen and ( min-width: 1120px) {
+                width: 50%;                  
+                margin-top: 7px;          
+                margin-left: 36px;         
+                margin-bottom: 49px;
+                padding-right: 40px;
+            }
+                
+            img {
+                width: 100% ;
+                    
+                @media screen and ( max-width: 500px) {
+                    padding-left: 16px ;
+                    padding-right: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/* Ремонт техники различных брендов */
+
+.brand-section {
+    .brand-section__title {
+        margin: 0;  
+        padding: 16px 24px;
+        border-top: 3px solid $line-color;
+        background-image: linear-gradient( 45deg, $white-color 0%, $main-color 100%);    
+    }
+
+    .brand-section__wrap {
+        flex-wrap: wrap;
+        gap: 10px 24px;
+        padding: 24px 24px 10px 24px;
+        border: 0px solid $gray-text-color;
+
+        @media screen and ( max-width: 500px) {
+            display: none;
+        }
+
+        @media screen and ( min-width: 1120px) {
+            gap: 10px 32px;
+            padding: 24px 32px 10px 32px;
+        }
+
+        .brand-section__item {
+            background-color: $main-color;           
+        }
+    }
+
+    .read-more {
+        display: flex;
+        background-color: $main-color;
+        
+        margin-left: 24px;
+        margin-bottom: 20px;   
+        padding: 10px 0px;
+
+        @media screen and ( max-width: 500px) {
+            display: none;
+        }
+
+        @media screen and ( min-width: 1120px) {
+            margin-left: 32px;
+        }
+
+        img {        
+            margin-right: 10px;    
+        }
+    }
+}
+
+
+
+/* Ремонт техники различных видов брендов js */
+
+@media screen and ( min-width: 500px) and (max-width: 1120px) {
+    
+    #brand:nth-child(7),
+    #brand:nth-child(8),
+    #brand:nth-child(9),
+    #brand:nth-child(10),
+    #brand:nth-child(11),
+    #brand:nth-child(12) {
+        display: none ;                    /* inline-block, none */
+    }
+}
+
+@media screen and ( min-width: 1120px) {
+
+    #brand:nth-child(9),
+    #brand:nth-child(10),
+    #brand:nth-child(11),
+    #brand:nth-child(12) {
+        display: none ;                    /* inline-block, none */
+    }
+}
+
+#brandList .openned {
+    display: inline-block;
+}
+
+
+
+
+/* Ремонт различных видов техники */
+
+.technic-section {
+    .technic-section__title {
+        margin: 0;  
+        padding: 16px 24px;
+        border-top: 3px solid $line-color;
+        background-image: linear-gradient( 45deg, $white-color 0%, $main-color 100%);    
+    }
+
+    .technic-section__wrap {
+        flex-wrap: wrap;
+        gap: 10px 24px;
+        padding: 24px 24px 10px 24px;
+        border: 0px solid $gray-text-color;
+
+        @media screen and ( max-width: 500px) {
+            display: none;
+        }
+
+        @media screen and ( min-width: 1120px) {
+            gap: 10px 32px;
+            padding: 24px 32px 10px 32px;
+        }
+
+        .technic-section__item {
+            background-color: $main-color;           
+        }
+    }
+
+    .read-more {
+        display: flex;
+        background-color: $main-color;
+        
+        margin-left: 24px;
+        margin-bottom: 20px;   
+        padding: 10px 0px;
+
+        @media screen and ( max-width: 500px) {
+            display: none;
+        }
+
+        @media screen and ( min-width: 1120px) {
+            margin-left: 32px;
+        }
+
+        img {        
+            margin-right: 10px;    
+        }
+    }
+}
+
+
+
+/* Ремонт различных видов техники js*/
+
+@media screen and ( min-width: 500px) and (max-width: 1120px) {
+    #technic:nth-child(4),
+    #technic:nth-child(5),
+    #technic:nth-child(6),
+    #technic:nth-child(7),
+    #technic:nth-child(8) {
+        display: none ;                    
+    }
+}
+
+@media screen and ( min-width: 1120px) {
+    #technic:nth-child(5),
+    #technic:nth-child(6),
+    #technic:nth-child(7),
+    #technic:nth-child(8) {
+        display: none ;                    
+    }
+}
+
+#technicList .openned {
+    display: inline-block;
+}
+
+
+
+
+
+/* swiper */
+
+.swiper {
+    border: 0px solid lightgray;
+    margin-bottom: 16px;
+    
+    .swiper-wrapper {
+        margin-bottom: 20px;
+        padding: 16px;
+
+        .swiper-slide {
+            /*text-align:  ; */                 /* выравнивание по центру  */
+            width: 240px !important;
+            margin-right: 16px !important;
+
+            button {
+                display: flex;
+                background-color: $main-color;
+            }
+        }
+    }
+
+    .swiper-pagination {
+        justify-content: center;
+
+        span {
+            width: 12px;
+            height: 12px;
+            margin-right: 8px !important;
+            background-color: $grey-sidebar-text-color;
+        }
+    }
+
+    @media screen and ( min-width: 500px) and (max-width: 1120px) {
+        display: none !important ;
+    }
+
+    @media screen and ( min-width: 1120px) {
+        display: none !important ;
+    }
+}
+
+
+
+/* Читать далее */
+
+.look-more {
+    display: flex;
+    background-color: $main-color;
+    
+    margin-left: 24px;
+    margin-bottom: 20px;   
+    padding: 10px 0px;
+
+    @media screen and ( min-width: 1120px) {
+        margin-left: 32px;
+    }
+
+    img {        
+        margin-right: 10px;    
+    }
+}
+
+.section-about__text:nth-child(2) { 
+    display: none;
+}
+
+.section-about__description .openned {
+    display: inline-block ;
+}
+
+
+
+/* Цены на услуги */
+
+.prices-section {
+    .prices-section__title {
+        margin: 0;  
+        padding: 16px 24px;
+        border-top: 3px solid $line-color;
+        background-image: linear-gradient( 45deg, $white-color 0%, $main-color 100%); 
+    }
+
+    > table {
+        /*border: 1px solid gray;*/
+        margin: 24px;  
+        padding: 0px;
+        
+        border-radius: 6px;
+
+        @media screen and ( max-width: 500px) {
+            display: none;
+        }
+
+        @media screen and ( min-width: 1120px) {
+            margin: 32px;
+            margin-top: 16px;
+        }
+        
+        tr {
+            display: grid;
+            grid-template-columns: 1fr 100px 100px 125px;
+            column-gap: 24px;
+            align-items: center;
+            background-color: $white-color;
+            padding: 16px;    
+            border-bottom: 2px solid $border-table-color;
+            
+            border-image: linear-gradient( to right, transparent 2%, $border-table-color 2%, $border-table-color 98%, transparent 98% );
+            border-image-slice: 1;
+            border-image-repeat: stretch;
+
+            @media screen and ( min-width: 500px) and (max-width: 1120px) {
+                column-gap: 7vw;   /* 110px, 7vw */
+            }
+
+            @media screen and ( min-width: 1120px) {
+                grid-template-columns: 1fr 100px 100px 125px;
+                column-gap: 7vw;   /* 110px, 7vw */                
+                padding: 16px;
+                padding-left: 24px;
+                padding-right: 24px;
+                
+                border-image: linear-gradient( to right, transparent 2.5%, $border-table-color 2.5%, $border-table-color 97.5%, transparent 97.5% );
+                border-image-slice: 1;
+                border-image-repeat: stretch;
+            }
+            
+            &:nth-child(1) {
+                background-color: $main-color;
+                border-bottom: 0px solid gray;  
+            }
+
+            &:nth-child(2) {
+                border-top-left-radius: 6px; 
+                border-top-right-radius: 6px;    
+            }
+
+            &:last-child {
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+                border-bottom: 0px solid gray; 
+            }
+
+            td {
+                button {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    .prices-section__note {
+        width: 430px;
+        margin: 24px;
+        margin-bottom: 16px;
+
+        @media screen and ( max-width: 500px) {
+            width: 90%;           /* поменять 430px */
+            margin: 16px; 
+        }
+
+        @media screen and ( min-width: 1120px) {
+            margin: 32px;
+            margin-bottom: 16px;
+        }
+    }
+
+    .prices-section__link-order {
+        display: block;
+        margin: 24px;
+        margin-top: 16px;
+
+        @media screen and ( max-width: 500px) {
+            display: block;
+            margin: 16px;
+        }
+
+        @media screen and ( min-width: 1120px) {
+            margin: 32px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        span {
+            vertical-align: top;
+        }
+    }
+
+}
+
+
+
+
+/* Цены на услуги - swiper */
+
+.prices-section {
+    .swiper-slide {
+        table {
+            margin: 0px;
+
+            tr {
+                display: block;
+                width: 260px;    
+                background-color: $white-color;
+                padding: 0px;    
+                border-bottom: 0px solid $border-table-color;
+
+                &:nth-child(1) {
+                    border-top-left-radius: 6px; 
+                    border-top-right-radius: 6px;    
+                }
+
+                &:nth-child(2) {
+                    border-top-left-radius: 0px; 
+                    border-top-right-radius: 0px;
+                    height: 36px; 
+                }
+
+                &:last-child {
+                    border-bottom-left-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                    padding-bottom: 16px; 
+                }
+
+                th {
+                    padding: 16px;
+                    padding-bottom: 0px;
+                }
+
+                td {
+                    padding: 16px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+
+                    button {
+                        position: absolute;
+                        right: -5px;
+                        bottom: 16px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+.prices-section .swiper .swiper-slide {    
+    margin-right: 40px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and ( max-width: 500px) {}
+
+@media screen and ( min-width: 500px) and (max-width: 1120px) {}
+
+@media screen and ( min-width: 1120px) {}
+
+
+
+
+
+
+

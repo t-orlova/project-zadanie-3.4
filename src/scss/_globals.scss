@@ -1,0 +1,185 @@
+
+@font-face {
+    font-family: "TTLakes Medium";
+    src: url('../fonts/TTLakes-Medium.woff') format('woff'),
+         url('../fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;        
+}
+
+@font-face {
+    font-family: "TTLakes Bold";
+    src: url("../fonts/TTLakes-Bold.woff") format('woff'),
+         url('../fonts/TTLakes-Bold.ttf') format('truetype');
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html,    
+body {
+    font-family: 'TTLakes Medium', sans-serif ;
+    margin: 0;
+}
+
+body {
+    background-color: $main-color;
+    min-height: 100vh;
+    overflow: auto;                      /*  hidden , auto  */
+    /*  overflow-x: ;                  /*  hidden  */    
+}
+
+
+
+h1 {
+    font-family: 'TTLakes Bold', sans-serif  ;
+    font-weight: 700;
+    font-size: 28px ;
+    line-height: 40px ;
+    letter-spacing: -0.6px ;
+    color: $black-text-color ;
+}
+
+button {
+    font-family: 'TTLakes Medium', sans-serif  ;
+    font-weight: 500 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    letter-spacing: -0.2px ;     
+}
+
+button {
+    padding: 0;
+    border: 0;
+    background-color: $white-color;     
+    cursor: pointer;
+}
+
+.main-menu__navigation button {
+    color: $gray-text-color; 
+}
+
+p {
+    font-weight: 400 ;
+    font-size: 14px ;
+    line-height: 20px ;
+    letter-spacing: 0.2px ;
+    color: $black-text-color ;  
+    text-align: justify;
+
+    @media screen and ( max-width: 500px) {
+        line-height: 18px ;
+    }
+}
+
+a {
+    font-weight: 500 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    letter-spacing: -0.2px ;
+    color: $black-text-color ; 
+    text-decoration: none;
+}
+
+div {
+    display: flex;  
+}
+
+h2 {
+    font-weight: 400 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    letter-spacing: -0.2px ;
+    color: $gray-text-color; 
+    text-transform: uppercase;    
+}
+
+header {
+    background-color: $header-color;
+}
+
+th {
+    font-weight: 500 ;
+    font-size: 14px ;
+    line-height: 16px ;
+    letter-spacing: 0px ;
+    color: $gray-text-color;
+    text-align: justify; 
+}
+
+td {
+    font-weight: 400 ;
+    font-size: 14px ;
+    line-height: 18px ;
+    letter-spacing: 0.2px ;
+    color: $black-text-color;
+}
+
+input {
+    font-family: 'TTLakes Medium', sans-serif  ;
+    font-weight: 500 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    letter-spacing: -0.2px ;
+    color: $grey-sidebar-text-color;
+}
+
+textarea {
+    font-family: 'TTLakes Medium', sans-serif  ;
+    font-weight: 500 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    letter-spacing: -0.2px ;
+    color: $grey-sidebar-text-color;
+}
+
+main {
+   background-color: $main-color;
+   min-height: 100%;
+}
+
+nav {
+    @media screen and ( max-width: 500px) {
+        overflow: auto ;
+    }
+
+    @media screen and ( min-width: 500px) and (max-width: 1120px) {
+        overflow: auto ;
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
