@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   mode: 'development',
@@ -10,6 +11,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  devtool: 'source-map',
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html'
@@ -31,9 +33,31 @@ module.exports = {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader']
       },
+      /*
       {
         test: /\.s[ac]ss$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader','sass-loader']
+      },
+      */
+      {
+        test: /\.s[ac]ss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  require('postcss-preset-env'),									
+                  autoprefixer({
+                    overrideBrowserslist: ['ie >= 8', 'last 4 version']
+                  })
+                ]
+              }
+            }
+          },
+          'sass-loader']
       },
       {
         test: /\.(png|jpg|svg|gif|jpeg|webp)$/,
@@ -58,6 +82,10 @@ module.exports = {
     ]
   }
 };
+
+
+
+
 
 
 
