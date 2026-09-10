@@ -19,7 +19,9 @@
     align-items: center;
     height: 88px;
     background-color: $white-color;
-    border-bottom: 2px solid $line-color;
+    border-bottom: 0px solid $line-color;
+
+    /*border-bottom: 2px solid $line-color;*/
     
     .sidebar-header__item {
         &:nth-child(2) {    
@@ -220,7 +222,7 @@ body {
     @media screen and ( min-width: 1120px) {
         position: relative;
         left: 321px;
-        width: 75%; 
+        width: 78%; 
     }
 }
 
@@ -286,7 +288,8 @@ body {
     .button-close {
         display: flex;
         background-color: $sidebar-color;
-        margin-left: auto;
+        margin-right: auto;
+        /*margin-left: auto;*/
         margin-bottom: 32px;
         
         @media screen and ( min-width: 1120px) {
@@ -504,7 +507,8 @@ body {
     .button-close {
         display: flex;
         background-color: $sidebar-color;
-        margin-left: auto;
+        margin-right: auto;
+        /*margin-left: auto;*/
         margin-bottom: 32px;
 
         @media screen and ( min-width: 1120px) {
