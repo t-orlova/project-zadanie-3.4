@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*$sidebar-color: aliceblue;*/
+/*$sidebar-color: #ffffff;  финальная версия по макету   */
 @font-face {
   font-family: "TTLakes Medium";
   src: url("../fonts/TTLakes-Medium.woff") format("woff"), url("../fonts/TTLakes-Medium.ttf") format("truetype");
@@ -485,13 +485,8 @@ main {
   margin: 0;
   padding: 16px 24px;
   border-top: 3px solid #d9fff5;
-  background-image: linear-gradient(45deg, #f8f8f8 0%, #ffffff 100%);
-  /*background-image: linear-gradient( 45deg, $white-color 0%, $main-color 100%);*/
-}
-@media screen and (min-width: 1120px) {
-  .brand-section .brand-section__title {
-    /*margin-right: -40px;*/
-  }
+  background-image: linear-gradient(45deg, #ffffff 0%, #f8f8f8 100%);
+  /*background-image: linear-gradient( 45deg, $main-color 0%, $white-color 100%);  финальная версия по макету */
 }
 .brand-section .brand-section__wrap {
   flex-wrap: wrap;
@@ -562,7 +557,7 @@ main {
   margin: 0;
   padding: 16px 24px;
   border-top: 3px solid #d9fff5;
-  background-image: linear-gradient(45deg, #f8f8f8 0%, #ffffff 100%);
+  background-image: linear-gradient(45deg, #ffffff 0%, #f8f8f8 100%);
 }
 .technic-section .technic-section__wrap {
   flex-wrap: wrap;
@@ -695,7 +690,7 @@ main {
   margin: 0;
   padding: 16px 24px;
   border-top: 3px solid #d9fff5;
-  background-image: linear-gradient(45deg, #f8f8f8 0%, #ffffff 100%);
+  background-image: linear-gradient(45deg, #ffffff 0%, #f8f8f8 100%);
 }
 .prices-section > table {
   /*border: 1px solid gray;*/
@@ -854,7 +849,7 @@ main {
   left: 0;
   width: 320px;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: aliceblue;
   display: flex;
   flex-direction: column;
   box-shadow: 3px 0px 30px 0px #7e7e82;
@@ -865,8 +860,8 @@ main {
   align-items: center;
   height: 88px;
   background-color: #ffffff;
-  border-bottom: 0px solid #d9fff5;
-  /*border-bottom: 2px solid $line-color;*/
+  border-bottom: 2px solid #d9fff5;
+  /*border-bottom: 0px solid $line-color;  финальная версия по макету  */
 }
 .sidebar-header__wrap .sidebar-header__item:nth-child(2) {
   width: 50%;
@@ -881,7 +876,7 @@ main {
   margin: 0;
   padding: 25px 0px;
   list-style: none;
-  background-color: #ffffff;
+  background-color: aliceblue;
 }
 .sidebar__list .sidebar__item {
   margin-bottom: 1vh; /*  32px   22px  */
@@ -927,7 +922,7 @@ main {
   padding-right: 15px;
 }
 .sidebar-footer .sidebar-footer__item .sidebar-footer__button {
-  background-color: #ffffff;
+  background-color: aliceblue;
 }
 .sidebar-footer .sidebar-footer__tel a {
   font-weight: 700;
@@ -943,7 +938,7 @@ main {
   padding-right: 10px;
 }
 .sidebar-footer .sidebar-lang .sidebar-lang__item .sidebar-lang__button {
-  background-color: #ffffff;
+  background-color: aliceblue;
 }
 .sidebar-footer .sidebar-lang .sidebar-lang__item button:active {
   color: #7e7e82;
@@ -1075,7 +1070,7 @@ main {
   right: 0;
   width: 340px;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: aliceblue;
   padding: 24px;
 }
 @media screen and (max-width: 500px) {
@@ -1093,9 +1088,9 @@ main {
 }
 .sidebar-feedback .button-close {
   display: flex;
-  background-color: #ffffff;
-  margin-right: auto;
-  /*margin-left: auto;*/
+  background-color: aliceblue;
+  margin-left: auto;
+  /*margin-right: auto;   финальная версия по макету  */
   margin-bottom: 32px;
 }
 @media screen and (min-width: 1120px) {
@@ -1191,7 +1186,7 @@ main {
 }
 .sidebar-feedback .sidebar-feedback__form .button-submit {
   display: flex;
-  background-color: #ffffff;
+  background-color: aliceblue;
   margin-left: auto;
   margin-top: 18px;
 }
@@ -1285,7 +1280,7 @@ main {
   right: 0;
   width: 340px;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: aliceblue;
   padding: 24px;
 }
 @media screen and (max-width: 500px) {
@@ -1303,9 +1298,9 @@ main {
 }
 .sidebar-call .button-close {
   display: flex;
-  background-color: #ffffff;
-  margin-right: auto;
-  /*margin-left: auto;*/
+  background-color: aliceblue;
+  margin-left: auto;
+  /*margin-right: auto;   финальная версия по макету  */
   margin-bottom: 32px;
 }
 @media screen and (min-width: 1120px) {
@@ -1383,7 +1378,7 @@ main {
 }
 .sidebar-call .sidebar-call__form .button-submit {
   display: flex;
-  background-color: #ffffff;
+  background-color: aliceblue;
   margin-left: auto;
   margin-top: 18px;
 }
